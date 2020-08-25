@@ -1,0 +1,9 @@
+djangotest
+pages/__pycache__
+pages/migrations/__pycache__
+products/__pycache__
+products/migrations/__pycache__
+restapp/__pycache__
+restapp/migrations/__pycache__
+testapp/__pycache__
+.vscode

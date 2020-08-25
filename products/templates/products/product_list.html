@@ -1,0 +1,9 @@
+{% extends "Base.html" %}
+
+{% block content %}
+<ul>
+    {% for obj in objs %}
+    <li>{{forloop.counter}}- <a href="{{ obj.get_absolute_url }}">{{obj.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

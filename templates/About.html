@@ -1,0 +1,22 @@
+{% extends "Base.html" %}
+
+{% block content %}
+<h1>About</h1>
+{{ request.user }}
+<p>
+{{ my_text }}, {{ my_number }}
+</p>
+<p>This is template.</p>
+
+<ul>
+    {% for my_sub_list in my_list %}
+    {% if my_sub_list == 312 %}
+        <li>{{ forloop.counter }}--{{ my_sub_list|add:22 }}</li>
+    {% elif my_sub_list == "Abc" %}
+        <li>This is not  my netowrk.</li>
+    {% else %}
+        <li>{{ forloop.counter }}--{{ my_sub_list }}</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}
